@@ -16,7 +16,7 @@ const initdb = async () =>
 export const putDb = async (content) => {
   console.log(`adding to DB`);
   const stepDb = await openDB('step',1);
-  const tx = stepDb.transavion('step','readwrite');
+  const tx = stepDb.transaction('step','readwrite');
   const store = tx.objectStore('step');
   const request = store.put({ id: 1, value: content});
   const result = await request;
@@ -27,7 +27,7 @@ export const putDb = async (content) => {
 //  Add logic for a method that gets all the content from the database
 export const getDb = async () => {
   const stepDb = await openDB('step',1);
-  const tx = stepDb.transcation('step', 'readonly');
+  const tx = stepDb.transaction('step', 'readonly');
   const store = tx.objectStore('step');
   const request = store.put({ id: 1, value: content});
   const result = await request;
