@@ -31,9 +31,16 @@ module.exports = () => {
         fingerprints: false,
         start_url: '/',
         publicPath: '/',
+        icons: [
+          {
+            src: path.resolve('src/images/logo.png'),
+            sizes: [96, 128, 192, 256],
+            destination: path.join('assets','icons'),
+          },
+        ],
       }),
     ],
-    
+
 // Add CSS loaders and babel to webpack.
     module: {
       rules: [
