@@ -1,0 +1,7 @@
+{
+  "name": "Simple Text Editor Program",
+  "short_name": "S.T.E.P.",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "/"
+}
