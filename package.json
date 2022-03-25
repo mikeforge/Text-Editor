@@ -1,11 +1,11 @@
 {
-  "name": "JATE",
+  "name": "STEP",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "start:dev": "",
-    "start": "",
+    "start": "cd server",
     "server": "",
     "build": "",
     "install": "",
